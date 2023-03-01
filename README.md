@@ -4,8 +4,8 @@ RecipeRanger
 
 RecipeRanger is a simple iOS app that allows users to browse recipes and view their details. The app fetches recipe data from a JSON file named "recipesSample.json" and displays it in a list format. Users can tap on a recipe to view its details, including the recipe's name, description, ingredients, cooking time, and an image.
 
-![DetailVIew](https://user-images.githubusercontent.com/5268412/222051833-ec12b28c-cf83-42a6-808e-bdeba1d291ed.png | width=100)
-![ListVIew](https://user-images.githubusercontent.com/5268412/222051842-6d9f6dcb-f800-4afe-a192-70292cbfd0db.png | width=100)
+![DetailVIew](https://user-images.githubusercontent.com/5268412/222051833-ec12b28c-cf83-42a6-808e-bdeba1d291ed.png =250x250)
+![ListVIew](https://user-images.githubusercontent.com/5268412/222051842-6d9f6dcb-f800-4afe-a192-70292cbfd0db.png =250x250)
 
 
 Requirements
