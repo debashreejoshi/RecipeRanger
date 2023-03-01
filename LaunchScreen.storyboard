@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splashscreen" translatesAutoresizingMaskIntoConstraints="NO" id="7Vb-lh-8j3">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R4m-te-D80">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                            </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RecipeRanger" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="GJd-Yh-RWb">
+                                <rect key="frame" x="36" y="394.33333333333331" width="321" height="63.333333333333314"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="53"/>
+                                <color key="textColor" red="0.84705882352941175" green="0.32156862745098036" blue="0.29803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="R4m-te-D80" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="2hc-op-WNh"/>
+                            <constraint firstItem="GJd-Yh-RWb" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="3Iz-hG-9Ze"/>
+                            <constraint firstAttribute="bottom" secondItem="R4m-te-D80" secondAttribute="bottom" id="8cd-AN-bS2"/>
+                            <constraint firstAttribute="bottom" secondItem="7Vb-lh-8j3" secondAttribute="bottom" id="EYS-gv-fpk"/>
+                            <constraint firstItem="7Vb-lh-8j3" firstAttribute="trailing" secondItem="Bcu-3y-fUS" secondAttribute="trailing" id="QvF-4b-gaD"/>
+                            <constraint firstItem="7Vb-lh-8j3" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" id="VKr-Dq-eSf"/>
+                            <constraint firstItem="R4m-te-D80" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="cFL-U7-5H7"/>
+                            <constraint firstAttribute="trailing" secondItem="R4m-te-D80" secondAttribute="trailing" id="iF3-76-42B"/>
+                            <constraint firstItem="GJd-Yh-RWb" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="ijy-yU-nu0"/>
+                            <constraint firstAttribute="bottom" secondItem="R4m-te-D80" secondAttribute="bottom" id="s4S-a4-O6P"/>
+                            <constraint firstItem="7Vb-lh-8j3" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="xhG-yI-anM"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.671755725190835" y="374.64788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Splashscreen" width="400" height="711"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
