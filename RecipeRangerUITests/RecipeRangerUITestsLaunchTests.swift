@@ -19,12 +19,15 @@ final class RecipeRangerUITestsLaunchTests: XCTestCase {
     
     func testRecipeListView() {
         
+        // Wait for the RecipesView to appear
+        XCTAssertTrue(app.staticTexts["Recipe Ranger"].waitForExistence(timeout: 5))
+        
         // Check Recipes List
         XCTAssertTrue(app.navigationBars["Recipes"].exists)
         XCTAssertTrue(app.collectionViews["RecipeList"].exists)
         
         // Tap on a Recipe
-        app.collectionViews["RecipeList"]/*@START_MENU_TOKEN@*/.otherElements["Pork, fennel and sage ragu with polenta"]/*[[".cells.otherElements[\"Pork, fennel and sage ragu with polenta\"]",".otherElements[\"Pork, fennel and sage ragu with polenta\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.collectionViews["RecipeList"].otherElements["Pork, fennel and sage ragu with polenta"].tap()
         
         // Check Recipe Detail
         XCTAssertTrue(app.navigationBars["Recipe detail"].exists)
@@ -32,7 +35,6 @@ final class RecipeRangerUITestsLaunchTests: XCTestCase {
         
         // Tap Back
         app.navigationBars["Recipe detail"].buttons["Recipes"].tap()
-        
         
         // Check Recipes List
         XCTAssertTrue(app.navigationBars["Recipes"].exists)
