@@ -11,7 +11,7 @@ import SwiftUI
 struct RecipeRangerApp: App {
     var body: some Scene {
         WindowGroup {
-            RecipesView()
+            SplashScreenView()
         }
     }
 }

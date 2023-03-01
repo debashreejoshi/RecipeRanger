@@ -24,6 +24,7 @@
 		B85E455A29ACBE2300BE70E0 /* recipesSample.json in Resources */ = {isa = PBXBuildFile; fileRef = B85E455929ACBE2300BE70E0 /* recipesSample.json */; };
 		B8D4F22629AEEFE400DBB4C3 /* RecipesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D4F22529AEEFE400DBB4C3 /* RecipesViewModelTests.swift */; };
 		B8D4F22829AEF1A000DBB4C3 /* RecipeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D4F22729AEF1A000DBB4C3 /* RecipeTest.swift */; };
+		B8D4F23329AF2AAF00DBB4C3 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D4F23229AF2AAF00DBB4C3 /* SplashScreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		B85E455929ACBE2300BE70E0 /* recipesSample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = recipesSample.json; sourceTree = "<group>"; };
 		B8D4F22529AEEFE400DBB4C3 /* RecipesViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesViewModelTests.swift; sourceTree = "<group>"; };
 		B8D4F22729AEF1A000DBB4C3 /* RecipeTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTest.swift; sourceTree = "<group>"; };
+		B8D4F23229AF2AAF00DBB4C3 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				B85E451C29AC3A9F00BE70E0 /* RecipeRangerApp.swift */,
 				B85E452029AC3AA000BE70E0 /* Assets.xcassets */,
 				B85E455929ACBE2300BE70E0 /* recipesSample.json */,
+				B8D4F23229AF2AAF00DBB4C3 /* SplashScreenView.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -351,6 +354,7 @@
 				B85E451D29AC3A9F00BE70E0 /* RecipeRangerApp.swift in Sources */,
 				B80ADF6B29AEA91F00DCEDDA /* RecipeRowViewModel.swift in Sources */,
 				B80ADF6929AE2A6800DCEDDA /* RecipeDetailViewModel.swift in Sources */,
+				B8D4F23329AF2AAF00DBB4C3 /* SplashScreenView.swift in Sources */,
 				B85E454929AC47F800BE70E0 /* Recipe.swift in Sources */,
 				B85E455029AC492F00BE70E0 /* RecipeRowView.swift in Sources */,
 			);
