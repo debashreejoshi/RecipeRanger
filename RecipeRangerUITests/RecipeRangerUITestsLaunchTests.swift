@@ -18,15 +18,25 @@ final class RecipeRangerUITestsLaunchTests: XCTestCase {
     }
     
     func testRecipeListView() {
+        
+        // Check Recipes List
         XCTAssertTrue(app.navigationBars["Recipes"].exists)
-        XCTAssertTrue(app.tables["RecipeListView"].exists)
-        XCTAssertEqual(app.tables["RecipeListView"].cells.count, 3)
+        XCTAssertTrue(app.collectionViews["RecipeList"].exists)
+        
+        // Tap on a Recipe
+        app.collectionViews["RecipeList"]/*@START_MENU_TOKEN@*/.otherElements["Pork, fennel and sage ragu with polenta"]/*[[".cells.otherElements[\"Pork, fennel and sage ragu with polenta\"]",".otherElements[\"Pork, fennel and sage ragu with polenta\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        
+        // Check Recipe Detail
+        XCTAssertTrue(app.navigationBars["Recipe detail"].exists)
+        XCTAssertTrue(app.staticTexts["ReceipeDetailsDynamicTitle"].exists)
+        
+        // Tap Back
+        app.navigationBars["Recipe detail"].buttons["Recipes"].tap()
         
         
-        let cell = app.tables["RecipeListView"].cells.element(boundBy: 0)
-        XCTAssertTrue(cell.staticTexts["recipeTitle"].exists)
-        XCTAssertTrue(cell.staticTexts["recipeDescription"].exists)
-        XCTAssertTrue(cell.images["recipeThumbnail"].exists)
+        // Check Recipes List
+        XCTAssertTrue(app.navigationBars["Recipes"].exists)
+        XCTAssertTrue(app.collectionViews["RecipeList"].exists)
     }
     
     

@@ -24,6 +24,7 @@ struct RecipesView: View {
                 .accessibilityElement()
                 .accessibility(label: Text("\(recipe.dynamicTitle)"))
             }
+            .accessibilityIdentifier("RecipeList")
             .navigationTitle("Recipes")
             .navigationBarTitleDisplayMode(.large)
         }

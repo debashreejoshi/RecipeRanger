@@ -1,14 +1,14 @@
 //
-//  RecipeRangerTests.swift
+//  RecipesViewModelTests.swift
 //  RecipeRangerTests
 //
-//  Created by Debashree Joshi on 27/2/2023.
+//  Created by Debashree Joshi on 1/3/2023.
 //
 
 import XCTest
 @testable import RecipeRanger
 
-final class RecipeRangerTests: XCTestCase {
+final class RecipesViewModelTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -31,5 +31,11 @@ final class RecipeRangerTests: XCTestCase {
         self.measure {
             // Put the code you want to measure the time of here.
         }
+    }
+    
+    func testLoadRecipes() {
+        let viewModel = RecipesViewModel()
+        viewModel.loadRecipes()
+        XCTAssertEqual(viewModel.recipes.count, 8)
     }
 }

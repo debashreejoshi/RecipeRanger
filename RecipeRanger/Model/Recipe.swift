@@ -13,7 +13,7 @@ struct RecipeData: Codable {
 
 struct Recipe: Codable, Identifiable {
     
-    var id: Int?
+    let id: UUID = UUID()
     let dynamicTitle: String
     let dynamicDescription: String
     let dynamicThumbnail: String
@@ -27,10 +27,10 @@ struct Recipe: Codable, Identifiable {
     
     static var sample: Recipe {
         let recipeDetails = RecipeDetails(amountLabel: "Serves", amountNumber: 8, prepLabel: "Prep", prepTime: "15m", prepNote: "+ cooling time", cookingLabel: "Cooking", cookingTime: "15m", cookTimeAsMinutes: 15, prepTimeAsMinutes: 15)
-        let ingredient1 = Ingredient(id: 0, ingredient: "1.2kg Coles Australian Pork Slow Cook Scotch Roast, cut into 10cm pieces")
-        let ingredient2 = Ingredient(id: 1, ingredient: "1 tsp ground fennel or fennel seeds")
-        let ingredient3 = Ingredient(id: 2, ingredient: "6 pancetta slices, thinly sliced")
-        return Recipe(id: 0, dynamicTitle: "Pork, fennel and sage ragu with polenta", dynamicDescription: "Put your slow cooker to work and make this mouth-watering pork ragu. Served with fluffy polenta, it’s a guaranteed crowd-pleaser. ", dynamicThumbnail: "Pork-ragu", dynamicThumbnailAlt: "Pork ragu served on top of polenta with fennel and fried sage on top with bread on the side", recipeDetails: recipeDetails, ingredients: [ingredient1, ingredient2, ingredient3])
+        let ingredient1 = Ingredient(ingredient: "1.2kg Coles Australian Pork Slow Cook Scotch Roast, cut into 10cm pieces")
+        let ingredient2 = Ingredient( ingredient: "1 tsp ground fennel or fennel seeds")
+        let ingredient3 = Ingredient( ingredient: "6 pancetta slices, thinly sliced")
+        return Recipe(dynamicTitle: "Pork, fennel and sage ragu with polenta", dynamicDescription: "Put your slow cooker to work and make this mouth-watering pork ragu. Served with fluffy polenta, it’s a guaranteed crowd-pleaser. ", dynamicThumbnail: "Pork-ragu", dynamicThumbnailAlt: "Pork ragu served on top of polenta with fennel and fried sage on top with bread on the side", recipeDetails: recipeDetails, ingredients: [ingredient1, ingredient2, ingredient3])
     }
 }
 
@@ -48,6 +48,6 @@ struct RecipeDetails: Codable {
 }
 
 struct Ingredient: Codable, Identifiable {
-    var id: Int?
+    let id: UUID = UUID()
     let ingredient: String
 }

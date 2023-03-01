@@ -26,6 +26,7 @@ struct RecipeDetailView: View {
                         .font(.title)
                         .fontWeight(.bold)
                         .accessibility(label: Text("Recipe name: \(viewModel.dynamicTitle)"))
+                        .accessibilityIdentifier("ReceipeDetailsDynamicTitle")
                     
                     Text(viewModel.dynamicDescription)
                         .font(.body)
@@ -65,6 +66,7 @@ struct RecipeDetailView: View {
         }
         .navigationBarTitle("Recipe detail")
         .accessibility(label: Text("Recipe detail"))
+        .accessibilityIdentifier("RecipeDetail")
         .padding(.vertical, 20)
     }
 }

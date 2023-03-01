@@ -19,10 +19,12 @@
 		B85E453A29AC3AA000BE70E0 /* RecipeRangerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85E453929AC3AA000BE70E0 /* RecipeRangerUITestsLaunchTests.swift */; };
 		B85E454729AC47C600BE70E0 /* RecipesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85E454629AC47C600BE70E0 /* RecipesViewModel.swift */; };
 		B85E454929AC47F800BE70E0 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85E454829AC47F800BE70E0 /* Recipe.swift */; };
-		B85E454E29AC490500BE70E0 /* Recipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85E454D29AC490500BE70E0 /* Recipes.swift */; };
+		B85E454E29AC490500BE70E0 /* RecipesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85E454D29AC490500BE70E0 /* RecipesView.swift */; };
 		B85E455029AC492F00BE70E0 /* RecipeRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85E454F29AC492F00BE70E0 /* RecipeRowView.swift */; };
 		B85E455229AC4BE700BE70E0 /* RecipeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85E455129AC4BE700BE70E0 /* RecipeDetailView.swift */; };
 		B85E455A29ACBE2300BE70E0 /* recipesSample.json in Resources */ = {isa = PBXBuildFile; fileRef = B85E455929ACBE2300BE70E0 /* recipesSample.json */; };
+		B8D4F22629AEEFE400DBB4C3 /* RecipesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D4F22529AEEFE400DBB4C3 /* RecipesViewModelTests.swift */; };
+		B8D4F22829AEF1A000DBB4C3 /* RecipeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D4F22729AEF1A000DBB4C3 /* RecipeTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,10 +60,12 @@
 		B85E453929AC3AA000BE70E0 /* RecipeRangerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeRangerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B85E454629AC47C600BE70E0 /* RecipesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesViewModel.swift; sourceTree = "<group>"; };
 		B85E454829AC47F800BE70E0 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
-		B85E454D29AC490500BE70E0 /* Recipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipes.swift; sourceTree = "<group>"; };
+		B85E454D29AC490500BE70E0 /* RecipesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesView.swift; sourceTree = "<group>"; };
 		B85E454F29AC492F00BE70E0 /* RecipeRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeRowView.swift; sourceTree = "<group>"; };
 		B85E455129AC4BE700BE70E0 /* RecipeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailView.swift; sourceTree = "<group>"; };
 		B85E455929ACBE2300BE70E0 /* recipesSample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = recipesSample.json; sourceTree = "<group>"; };
+		B8D4F22529AEEFE400DBB4C3 /* RecipesViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesViewModelTests.swift; sourceTree = "<group>"; };
+		B8D4F22729AEF1A000DBB4C3 /* RecipeTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,7 +142,7 @@
 		B80ADF7029AEDC0C00DCEDDA /* Recipes */ = {
 			isa = PBXGroup;
 			children = (
-				B85E454D29AC490500BE70E0 /* Recipes.swift */,
+				B85E454D29AC490500BE70E0 /* RecipesView.swift */,
 				B85E454629AC47C600BE70E0 /* RecipesViewModel.swift */,
 			);
 			path = Recipes;
@@ -189,6 +193,8 @@
 			isa = PBXGroup;
 			children = (
 				B85E452D29AC3AA000BE70E0 /* RecipeRangerTests.swift */,
+				B8D4F22529AEEFE400DBB4C3 /* RecipesViewModelTests.swift */,
+				B8D4F22729AEF1A000DBB4C3 /* RecipeTest.swift */,
 			);
 			path = RecipeRangerTests;
 			sourceTree = "<group>";
@@ -345,7 +351,7 @@
 				B80ADF6129AE013F00DCEDDA /* AsyncImageView.swift in Sources */,
 				B85E455229AC4BE700BE70E0 /* RecipeDetailView.swift in Sources */,
 				B85E454729AC47C600BE70E0 /* RecipesViewModel.swift in Sources */,
-				B85E454E29AC490500BE70E0 /* Recipes.swift in Sources */,
+				B85E454E29AC490500BE70E0 /* RecipesView.swift in Sources */,
 				B85E451D29AC3A9F00BE70E0 /* RecipeRangerApp.swift in Sources */,
 				B80ADF6B29AEA91F00DCEDDA /* RecipeRowViewModel.swift in Sources */,
 				B80ADF6929AE2A6800DCEDDA /* RecipeDetailViewModel.swift in Sources */,
@@ -358,6 +364,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8D4F22629AEEFE400DBB4C3 /* RecipesViewModelTests.swift in Sources */,
+				B8D4F22829AEF1A000DBB4C3 /* RecipeTest.swift in Sources */,
 				B85E452E29AC3AA000BE70E0 /* RecipeRangerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -515,8 +523,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -544,8 +551,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

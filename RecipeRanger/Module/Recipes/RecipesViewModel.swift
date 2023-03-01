@@ -23,19 +23,7 @@ class RecipesViewModel: ObservableObject {
             decoder.keyDecodingStrategy = .convertFromSnakeCase
             let recipeData = try decoder.decode(RecipeData.self, from: data)
             
-            // Adds default id values to recipes and ingredients
-            let recipesWithIds = recipeData.recipes.enumerated().map { (index, recipe) -> Recipe in
-                var recipeWithId = recipe
-                recipeWithId.id = index
-                recipeWithId.ingredients = recipe.ingredients.enumerated().map { (index, ingredient) -> Ingredient in
-                    var ingredientWithId = ingredient
-                    ingredientWithId.id = index
-                    return ingredientWithId
-                }
-                return recipeWithId
-            }
-            
-            recipes = recipesWithIds
+            recipes = recipeData.recipes
         } catch {
             print("Failed to decode recipesSample.json: \(error.localizedDescription)")
         }

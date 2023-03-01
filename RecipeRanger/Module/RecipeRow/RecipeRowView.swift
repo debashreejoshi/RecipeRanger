@@ -43,7 +43,7 @@ struct RecipeRowView: View {
                         .foregroundColor(.gray)
                 }
                 .accessibilityElement(children: .combine)
-                .accessibilityLabel("\(viewModel.dynamicTitle), serves \(viewModel.amountNumber) people, cooking time \(viewModel.cookingTime)")
+                .accessibilityIdentifier("RecipeRow")
             }
         }
         .padding([.top,.bottom], 10)
