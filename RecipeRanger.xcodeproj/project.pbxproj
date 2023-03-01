@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B80ADF6129AE013F00DCEDDA /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80ADF6029AE013F00DCEDDA /* AsyncImageView.swift */; };
-		B80ADF6629AE05C800DCEDDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B80ADF6529AE05C800DCEDDA /* LaunchScreen.storyboard */; };
 		B80ADF6929AE2A6800DCEDDA /* RecipeDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80ADF6829AE2A6800DCEDDA /* RecipeDetailViewModel.swift */; };
 		B80ADF6B29AEA91F00DCEDDA /* RecipeRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80ADF6A29AEA91E00DCEDDA /* RecipeRowViewModel.swift */; };
 		B85E451D29AC3A9F00BE70E0 /* RecipeRangerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85E451C29AC3A9F00BE70E0 /* RecipeRangerApp.swift */; };
@@ -46,7 +45,6 @@
 
 /* Begin PBXFileReference section */
 		B80ADF6029AE013F00DCEDDA /* AsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
-		B80ADF6529AE05C800DCEDDA /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B80ADF6829AE2A6800DCEDDA /* RecipeDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailViewModel.swift; sourceTree = "<group>"; };
 		B80ADF6A29AEA91E00DCEDDA /* RecipeRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeRowViewModel.swift; sourceTree = "<group>"; };
 		B85E451929AC3A9F00BE70E0 /* RecipeRanger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipeRanger.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,7 +149,6 @@
 		B85E451029AC3A9F00BE70E0 = {
 			isa = PBXGroup;
 			children = (
-				B80ADF6529AE05C800DCEDDA /* LaunchScreen.storyboard */,
 				B85E451B29AC3A9F00BE70E0 /* RecipeRanger */,
 				B85E452C29AC3AA000BE70E0 /* RecipeRangerTests */,
 				B85E453629AC3AA000BE70E0 /* RecipeRangerUITests */,
@@ -321,7 +318,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B85E455A29ACBE2300BE70E0 /* recipesSample.json in Resources */,
-				B80ADF6629AE05C800DCEDDA /* LaunchScreen.storyboard in Resources */,
 				B85E452429AC3AA000BE70E0 /* Preview Assets.xcassets in Resources */,
 				B85E452129AC3AA000BE70E0 /* Assets.xcassets in Resources */,
 			);
